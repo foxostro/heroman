@@ -1,0 +1,7 @@
+<type>SpeedUp</type>
+<chargeType>ByDamageReceived</chargeType>
+<chargeOnDamageReceivedValue>1.0</chargeOnDamageReceivedValue>
+<totalCharge>100</totalCharge>
+<initialCharge>0</initialCharge>
+<speedFactor>2.0</speedFactor>
+<duration>10000</duration>

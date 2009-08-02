@@ -1,0 +1,12 @@
+Instructions
+-=-=-=-=-=-=
+
+Use the WASD controls to walk around.
+
+Aim and turn with the mouse.
+
+Left click to shoot your gun.
+
+Right Click to use an object.
+
+

@@ -1,0 +1,222 @@
+<name>level3</name>
+
+<light>
+	<ambient>&vec(0.4, 0.4, 0.4, 1.0)</ambient>
+	<diffuse>&vec(0.7, 0.7, 0.7, 1.0)</diffuse>
+	<specular>&vec(1.0, 1.0, 1.0, 1.0)</specular>
+	<position>&vec(0.577, 0.577, -0.577, 0.0)</position>
+</light>
+
+<numberCoinsGoal>4</numberCoinsGoal>
+
+<map>
+	<tileMetersX>1.0</tileMetersX>
+	<data>
+	############################################################
+	#..............ScccccccccS#___.....___..........#..........#
+	#..............ScccccccccS#_____._____..........#..........#
+	#..............ScccccccccS#_____._____..........#..........#
+	##########.....ScSSSSSSScS#_____._____..........#..........#
+	#..............ScS......bS#..........###....#####..........#
+	#___________...SbS......aS#..........###....#..............#
+	#___________...SaS........#....##....###...........#.......#
+	#___________...S.######...#....##....###....#......#.......#
+	#..............#....###...#..........###....##.............#
+	#..............#..######..#..........###....##.....#.......#
+	#.......########....##....######............##....#........#
+	#.......#......#....##....#.................#....#.........#
+	#.......#......#..........#......................#.........#
+	#..............#..........#........#########.....#.........#
+	#####.....................#........#.......#.....#.........#
+	#.........................#........#.......#.....#.........#
+	############......#########........#.......#.....#.........#
+	############......#########........#########.....#.........#
+	#................................................#.........#
+	#..........________.........................#####..........#
+	#........____________.......#..........######..............#
+	#......________________.....#..........#...................#
+	#........____________.......#..........#...................#
+	#..........________.........########.......................#
+	#............____........####......#.......................#
+	#.............__.........#.........#.......................#
+	#.............__.........####......#.......................#
+	#.............##............#......#.......................#
+	#######aaa############.............#.......................#
+	#aaaaaaaaaaaaa##%%%%%#.....................................#
+	#aaaaabbbbaaaa##%%%%%#####.................................#
+	#aaaaabbbbaaaa##%%%%%%%%%#.....#######......#..............#
+	#aaaaabbbbaaaa##%%%%%%%%%#...........#.....#...............#
+	#aaaaaaaaaaaaaaa%%%%%%%%%_..........#.....#................#
+	#aaaaaaaaaaaaa##%%%%%%%%%_.........#.....#.................#
+	################%%%%%%%%%_..............#..................#
+	#%%%%%%%%%%%%%%%%%%%%%%%%_.............#...................#
+	#%%%%%%%%%%%%%%%%%%%%%%%%_............#....................#
+	#%%%%%%%%%%%%%%%%%%%%%%%%............#.....................#
+	#%%%%%%%%%%%%%%%%%%%%%%%%...........#......................#
+	############################################################
+	</data>
+	<legend>
+		<entry>
+			<key>.</key>
+			<height>0.0</height>
+			<floor>data/tiles/floor/floor_redrug.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+		<entry>
+			<key>_</key>
+			<height>0.0</height>
+			<floor>data/tiles/floor/floor_cement.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+		<entry>
+			<key>%</key>
+			<height>0.0</height>
+			<floor>data/tiles/floor/floor_chesstiles.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+		<entry>
+			<key>#</key>
+			<height>2.4</height>
+			<floor>data/tiles/floor/floor_cement.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+		<entry>
+			<key>@</key>
+			<height>2.4</height>
+			<floor>data/tiles/floor/floor_cement.jpg</floor>
+			<wall>data/tiles/wall/wall_cracked.jpg</wall>
+		</entry>
+		<entry>
+			<key>a</key>
+			<height>0.2</height>
+			<floor>data/tiles/floor/floor_redrug.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+		<entry>
+			<key>b</key>
+			<height>0.4</height>
+			<floor>data/tiles/floor/floor_redrug.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+		<entry>
+			<key>c</key>
+			<height>0.6</height>
+			<floor>data/tiles/floor/floor_redrug.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+		<entry>
+			<key>d</key>
+			<height>0.8</height>
+			<floor>data/tiles/floor/floor_redrug.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+		<entry>
+			<key>e</key>
+			<height>1.0</height>
+			<floor>data/tiles/floor/floor_redrug.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+		<entry>
+			<key>S</key>
+			<height>5.0</height>
+			<floor>data/tiles/floor/floor_cement.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+	</legend>
+</map>
+
+<fog>
+	<red>0.2</red>
+	<green>0.2</green>
+	<blue>0.3</blue>
+	<near>1</near>
+	<far>50</far>
+</fog>
+
+<objects>
+	<object>
+		<template>data/actorDefs/player_start.xml</template>		
+		<position>&vec(3.0, 3.5, 3.0)</position>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/pickup_coin.xml</template>
+		<position>&vec(10.0, 5.0, 0.7)</position>
+		<look>&vec(1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/pickup_coin.xml</template>
+		<position>&vec(25.0, 5.0, 0.7)</position>
+		<look>&vec(1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/pickup_coin.xml</template>
+		<position>&vec(3.0, 45.0, 2.0)</position>
+		<look>&vec(1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/pickup_coin.xml</template>
+		<position>&vec(35.0, 55.0, 0.7)</position>
+		<look>&vec(1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/pickup_coin.xml</template>
+		<position>&vec(46.0, 15.0, 1.0)</position>
+		<look>&vec(1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/monster_spawn.xml</template>
+		<position>&vec(5.0, 9.0, 1.0)</position>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/monster_spawn.xml</template>
+		<position>&vec(30.0, 5.0, 1.0)</position>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/monster_spawn.xml</template>
+		<position>&vec(25.0, 53.0, 1.0)</position>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/Monster_Spawn_Kamikaze.xml</template>
+		<position>&vec(48.0, 54.0, 1.0)</position>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/Monster_Drone.xml</template>
+		<position>&vec(12.5, 8.5, 0.7)</position>
+		<look>&vec(-1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/Monster_Drone.xml</template>
+		<position>&vec(14.5, 9.5, 0.7)</position>
+		<look>&vec(-1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/Monster_Kamikaze.xml</template>
+		<position>&vec(30.5, 32.0, 0.7)</position>
+		<look>&vec(-1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/pickup_power.xml</template>
+		<position>&vec(8.0, 4.0, 1.0)</position>
+		<look>&vec(1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/pickup_power.xml</template>
+		<position>&vec(10.0, 4.0, 1.0)</position>
+		<look>&vec(1, 0, 0)</look>
+	</object>
+	
+</objects>

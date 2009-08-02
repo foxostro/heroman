@@ -1,0 +1,201 @@
+<name>level1</name>
+
+<light>
+	<ambient>&vec(0.4, 0.4, 0.4, 1.0)</ambient>
+	<diffuse>&vec(0.7, 0.7, 0.7, 1.0)</diffuse>
+	<specular>&vec(1.0, 1.0, 1.0, 1.0)</specular>
+	<position>&vec(0.577, 0.577, -0.577, 0.0)</position>
+</light>
+
+<numberCoinsGoal>3</numberCoinsGoal>
+
+<map>
+	<tileMetersX>1.0</tileMetersX>
+	<data>
+	########@#######@###
+	#.....#............#
+	@.....#............#
+	#.....####...###@..#
+	#.....#......#.....#
+	###..##......#.....#
+	#............#.....#
+	@............@.....#
+	#............#.....#
+	#....####@####.....#
+	#....#.............@
+	#....#.............#
+	#....#....###@##...#
+	#....#....#........#
+	#....#....@........#
+	#.........#........@
+	@.........######...#
+	#..................#
+	#....#.............#
+	##########@######@##
+	</data>
+	<legend>
+		<entry>
+			<key>.</key>
+			<height>0.0</height>
+			<floor>data/tiles/floor/floor_redrug.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+		<entry>
+			<key>%</key>
+			<height>0.0</height>
+			<floor>data/tiles/floor/floor_cement.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+		<entry>
+			<key>#</key>
+			<height>2.4</height>
+			<floor>data/tiles/floor/floor_cement.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+		<entry>
+			<key>@</key>
+			<height>2.4</height>
+			<floor>data/tiles/floor/floor_cement.jpg</floor>
+			<wall>data/tiles/wall/wall_cracked.jpg</wall>
+		</entry>
+		<entry>
+			<key>$</key>
+			<height>4.0</height>
+			<floor>data/tiles/floor/floor_cement.jpg</floor>
+			<wall>data/tiles/wall/wall.jpg</wall>
+		</entry>
+	</legend>
+</map>
+
+<fog>
+	<red>0.2</red>
+	<green>0.2</green>
+	<blue>0.3</blue>
+	<near>1</near>
+	<far>50</far>
+</fog>
+
+<objects>
+	<object>
+		<template>data/actorDefs/player_start.xml</template>		
+		<position>&vec(3.0, 3.5, 1.0)</position>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/pickup_coin.xml</template>
+		<position>&vec(5.0, 10.5, 0.7)</position>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/pickup_coin.xml</template>
+		<position>&vec(5.0, 17.0, 0.7)</position>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/pickup_coin.xml</template>
+		<position>&vec(15.0, 6.0, 0.7)</position>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/Monster_Drone.xml</template>
+		<position>&vec(12.5, 8.5, 0.7)</position>
+		<look>&vec(-1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/switch.xml</template>
+		<position>&vec(4.5, 1.5, 0.0)</position>
+		<component>
+			<name>BigSwitchDevice</name>
+			<categoryID>1</categoryID>
+		</component>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/switch.xml</template>
+		
+		<position>&vec(6.5, 1.5, 0.0)</position>
+		
+		<component>
+			<name>BigSwitchDevice</name>
+			<categoryID>2</categoryID>
+		</component>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/gate.xml</template>
+		
+		<position>&vec(5.5, 3.5, 1.2)</position>
+		
+		<component>
+			<name>SwitchReceiver</name>
+			<expr_on_switch>
+			(or (switchToggled 1) (switchToggled 2))
+			</expr_on_switch>
+		</component>
+
+		<component>
+			<name>Gate</name>
+			<initialState>a</initialState>
+			<positionA>&vec3(0.0, 0.0, 0.0)</positionA>
+			<positionB>&vec3(0.0, 0.0, -2.3)</positionB>
+			<timeToTransitionAB>500.0</timeToTransitionAB>
+			<timeToTransitionBA>800.0</timeToTransitionBA>
+		</component>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/gate.xml</template>
+		
+		<position>&vec(5.5, 4.5, 1.2)</position>
+		
+		<component>
+			<name>SwitchReceiver</name>
+			<expr_on_switch>
+			(or (switchToggled 1) (switchToggled 2))
+			</expr_on_switch>
+		</component>
+
+		<component>
+			<name>Gate</name>
+			<initialState>a</initialState>
+			<positionA>&vec3(0.0, 0.0, 0.0)</positionA>
+			<positionB>&vec3(0.0, 0.0, -2.3)</positionB>
+			<timeToTransitionAB>500.0</timeToTransitionAB>
+			<timeToTransitionBA>800.0</timeToTransitionBA>
+		</component>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/chair.xml</template>
+		<position>&vec(10.5, 9.0, 0.7)</position>
+		<look>&vec(1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/chair.xml</template>
+		<position>&vec(12.0, 4.0, 1.0)</position>
+		<look>&vec(1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/table.xml</template>
+		<position>&vec(11.5, 7.5, 0.6)</position>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/Monster_Drone.xml</template>
+		<position>&vec(11.5, 8.0, 1.0)</position>
+		<look>&vec(1, 0, 0)</look>
+	</object>
+	
+	<object>
+		<template>data/actorDefs/ExitGate.xml</template>
+		<position>&vec(5.0, 9.0, 0.7)</position>
+		<look>&vec(1, 0, 0)</look>
+		<component>
+			<name>ExitMapOnUse</name>
+			<nextMap>data/maps/level2.xml</nextMap>
+		</component>
+	</object>
+</objects>

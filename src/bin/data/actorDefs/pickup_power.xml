@@ -1,0 +1,46 @@
+<name>Pickup_Power</name>
+
+<components>
+	<component>
+		<name>RenderAsModel</name>
+		<model>data/models/shard/shard.objxml</model>
+	</component>
+	
+	<component>
+		<name>PhysicsBody</name>
+		<physicsGeometryType>Box</physicsGeometryType>
+		<height>0.2</height>
+		<radius>0.2</radius>
+		<kilograms>1.0</kilograms>
+		<initiallyDisablePhysics>false</initiallyDisablePhysics>
+	</component>
+	
+	<component>
+		<name>ObjectApproachable</name>
+		<thresholdTrigger>1.2</thresholdTrigger>
+		<thresholdRelease>1.5</thresholdRelease>
+	</component>
+	
+	<component>
+		<name>HighlightOnApproach</name>
+	</component>
+	
+	<component>
+		<name>ObjectCanBeUsed</name>
+	</component>
+	
+	<component>
+		<name>IsPickupItem</name>
+		<pickupType>Power</pickupType>
+		<effects>
+			<sound>data/sound/default.wav</sound>
+			<power>5</power>
+		</effects>
+	</component>
+	
+	<component>
+		<name>Scorable</name>
+		<scoreBehaviors>OnPickup</scoreBehaviors>
+		<scoreOnPickup>250</scoreOnPickup>
+	</component>
+</components>

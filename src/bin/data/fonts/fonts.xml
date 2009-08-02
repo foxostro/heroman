@@ -1,0 +1,28 @@
+﻿<fonts>
+
+<default>Verdana</default>
+
+<font>
+	<name>Astonished</name>
+	<image>data/fonts/astonished.png</image>
+	<huge>42</huge>
+	<large>24</large>
+	<normal>16</normal>
+	<small>12</small>
+	<spacing>0.0</spacing>
+	<lineHeight>1.20</lineHeight>
+</font>
+
+<font>
+	<name>Verdana</name>
+	<image>data/fonts/verdana.PNG</image>
+	<huge>42</huge>
+	<large>24</large>
+	<normal>16</normal>
+	<small>12</small>
+	<spacing>0.15</spacing>
+	<lineHeight>1.20</lineHeight>
+</font>
+
+
+</fonts>

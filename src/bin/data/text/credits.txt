@@ -1,0 +1,44 @@
+Hero Man
+15-466 Final Project
+
+Programming
+
+    Andrew Fox <arfox@andrew.cmu.edu>
+    
+    James Huff <jhuff@andrew.cmu.edu>
+
+    Some code was originally authored by others.
+    Please see these files for details.
+
+        Frustum.h/.cpp
+        PropertyBag.h/.cpp
+        StackWalker.h/.cpp
+        anorms.h
+	
+	
+3D Models
+	
+    John Nesky
+	
+	
+Textures
+
+    John Nesky
+	
+	
+Skybox
+
+    Johannes Schloerb
+    www.schloerb.com
+
+
+Chris DeLeon
+
+    Sound Effects
+	
+	
+Rachel Berkowitz
+
+    Music
+	
+	

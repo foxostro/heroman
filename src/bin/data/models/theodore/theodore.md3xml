@@ -1,0 +1,38 @@
+<polygonWinding>CCW</polygonWinding>
+
+<model>
+	<file>theodore.md3</file>
+	<skin>theodore.jpg</skin>
+</model>
+
+<animation>
+	<name>idle</name>
+	<looping>true</looping>
+	<start>2</start>
+	<length>5</length>
+	<fps>2.0</fps>
+</animation>
+
+<animation>
+	<name>run</name>
+	<looping>true</looping>
+	<start>17</start>
+	<length>5</length>
+	<fps>8.0</fps>
+</animation>
+
+<animation>
+	<name>flinch</name>
+	<looping>false</looping>
+	<start>42</start>
+	<length>2</length>
+	<fps>6.0</fps>
+</animation>
+
+<animation>
+	<name>dying</name>
+	<looping>false</looping>
+	<start>44</start>
+	<length>3</length>
+	<fps>3.0</fps>
+</animation>

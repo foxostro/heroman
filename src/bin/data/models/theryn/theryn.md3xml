@@ -1,0 +1,51 @@
+<polygonWinding>CCW</polygonWinding>
+
+<model>
+	<file>theryn.md3</file>
+	<skin>theryn.jpg</skin>
+</model>
+
+<model>
+	<file>flashlight.md3</file>
+	<skin>flashlight.jpg</skin>
+</model>
+
+<animation>
+	<name>idle</name>
+	<looping>true</looping>
+	<start>0</start>
+	<length>2</length>
+	<fps>8.0</fps>
+</animation>
+
+<animation>
+	<name>run</name>
+	<looping>true</looping>
+	<start>2</start>
+	<length>5</length>
+	<fps>5.0</fps>
+</animation>
+
+<animation>
+	<name>dying</name>
+	<looping>false</looping>
+	<start>47</start>
+	<length>5</length>
+	<fps>5.0</fps>
+</animation>
+
+<animation>
+	<name>attack</name>
+	<looping>false</looping>
+	<start>60</start>
+	<length>5</length>
+	<fps>8.0</fps>
+</animation>
+
+<animation>
+	<name>flinch</name>
+	<looping>false</looping>
+	<start>65</start>
+	<length>2</length>
+	<fps>2.0</fps>
+</animation>
